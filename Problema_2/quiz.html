@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="common_styles.css">
+		<link rel="stylesheet" href="quiz.css">
+	</head>
+	<body>
+		<div id="main_game_body">
+			<h1 id="title_game"> Quiz Game </h1>
+			<div id="question_number">
+				<p id="question_number_text">QUESTION:</p>
+				<p id="question_number_value">7/50</p>
+			</div>
+			<div id="game_content">
+				<table id="question_content">
+					<tr>
+						<td colspan="2" id="question_details">
+							<p id="question_domain"></p>
+							<p id="question_text"></p>
+						</td>
+					</tr>
+					<tr class="answer_row">
+						<td class="answer_holder">
+							<input type="button" value="" class="answer_but" id="answer1"/>
+						</td>
+						<td class="answer_holder">
+							<input type="button" value="" class="answer_but" id="answer2"/>
+						</td>
+					</tr>
+					<tr class="answer_row">
+						<td class="answer_holder">
+							<input type="button" value="." class="answer_but" id="answer3"/>
+						</td>
+						<td class="answer_holder">
+							<input type="button" value="" class="answer_but" id="answer4"/>
+						</td>
+					</tr>
+				</table>
+				<br>
+
+			</div>
+			<div id="button_content">
+				<button id="submit_but">
+					<!-- <p>&#10140</p> -->
+					<span class="arrow">&#10140;</span>
+					<p id="submit_text">Submit</p>
+				</button>
+			</div>
+		</div>
+	</body>
+	<script src="server.js"></script>
+	<script src="quiz.js"></script>
+</html>
